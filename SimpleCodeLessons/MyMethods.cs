@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace SimpleCodeLessons
 {
+    /// <summary>
+    /// Сборник моих методов
+    /// </summary>
     public class MyMethods
     {
         public static int GetNum(string message)
@@ -28,16 +31,40 @@ namespace SimpleCodeLessons
                 System.Console.Write("{0,4}", array[i]);
 
             }
-            Console.WriteLine();
+            Console.WriteLine("\n");
+           
+
         }
 
+        public static void PrintArray(double[] array, string message)
+        {
+            System.Console.WriteLine(message);
+            for (int i = 0; i < array.Length; i++)
+            {
+
+                System.Console.Write("{0,5}", array[i]);
+
+            }
+            Console.WriteLine("\n");
+
+        }
         public static void FillArrayRndm(int[] array)
         {
             Random rnd = new Random();
 
             for (int i = 0; i < array.Length; i++)
             {
-                array[i] = rnd.Next(-15, 16);
+                array[i] = rnd.Next(-10, 10);
+            }
+        }
+
+        public static void FillArrayRndm(double[] array)
+        {
+            Random rnd = new Random();
+
+            for (int i = 0; i < array.Length; i++)
+            {
+                array[i] = rnd.Next(-100, 100) / 10.0;
             }
         }
 
@@ -45,6 +72,8 @@ namespace SimpleCodeLessons
         {
             return new int[size];
         }
+
+
 
         public static void SetFontColor(int clr)
         {

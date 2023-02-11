@@ -11,18 +11,20 @@ namespace SimpleCodeLessons
     {
         static void Main(string[] args)
         {
-            int x = GetNum("Введите X");
+            double[] arrayDoubles = new double[4];
 
-            int[] array = CreateArray(x);
+            int[] arrayInteger = new int[4];
 
-            FillArrayRndm(array);
+            FillArrayRndm(arrayDoubles);
 
-            PrintArray(array, "Ваш массив:");
+            FillArrayRndm(arrayInteger);
 
-            RunningString("Пуривет придуркей!!!", 70);
+            PrintArray(arrayDoubles, "Ваш массив doubles:");
+
+            PrintArray(arrayInteger, "Ваш массив integer:");
 
             End();
-        }
 
+        }
     }
 }
