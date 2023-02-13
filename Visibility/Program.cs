@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using static Visibility.MyMethods;
 
 namespace Visibility
 {
@@ -31,7 +30,7 @@ namespace Visibility
 
             Console.WriteLine(repeatingValue);
 
-            End();
+            MyMethods.End();
 
             
 

@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using static Overloading.MyMethods;
 
 namespace Overloading
 {
@@ -15,15 +14,15 @@ namespace Overloading
 
             int[] arrayInteger = new int[4];
 
-            FillArrayRndm(arrayDoubles);
+            MyMethods.FillArrayRndm(arrayDoubles);
 
-            FillArrayRndm(arrayInteger);
+            MyMethods.FillArrayRndm(arrayInteger);
 
-            PrintArray(arrayDoubles, "Ваш массив doubles:");
+            MyMethods.PrintArray(arrayDoubles, "Ваш массив doubles:");
 
-            PrintArray(arrayInteger, "Ваш массив integer:");
+            MyMethods.PrintArray(arrayInteger, "Ваш массив integer:");
 
-            End();
+            MyMethods.End();
 
         }
     }
