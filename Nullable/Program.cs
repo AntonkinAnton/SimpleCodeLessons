@@ -9,14 +9,15 @@ namespace Nullable
 {
     internal class Program
     {
-        static void NullableArrayError(int[] array)
+        static void NullableArrayError(string[] array)
         {
-            array = null;
-            Console.WriteLine(array[0]);
+            array[0] = null;
+            string kindOfNull = array[0] ?? "ну типа нул референс ваш тут...";
+            Console.WriteLine(kindOfNull);
         }
         static void Main(string[] args)
         {
-            int[] array = { 1, 2, 3 };
+            string[] array = { "1", "2", "3" };
             int choose;
 
             do
@@ -25,7 +26,7 @@ namespace Nullable
                 Console.WriteLine("Choose youe destiny:");
                 choose = MyMethods.GetNum("1 - словить NullReferenceException\n2 - закрыть программу и спокойно пойти пить чай");
             } while (choose != 1 && choose != 2);
-
+           
             switch (choose)
             {
                 case 1:
