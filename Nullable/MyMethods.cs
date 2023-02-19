@@ -82,6 +82,17 @@ namespace Nullable
             }
         }
 
+        public static int[] FillArrayRndmReturn(int[] array)
+        {
+            Random rnd = new Random();
+
+            for (int i = 0; i < array.Length; i++)
+            {
+                array[i] = rnd.Next(-10, 10);
+            }
+            return array;
+        }
+
         public static int[] CreateArray(int size)
         {
             return new int[size];
@@ -152,6 +163,31 @@ namespace Nullable
                     }
                 }
             }
+        }
+
+        public static async void EndMessage(string endmessage, int delayMs)
+        {
+            endmessage += " ";
+            Console.CursorVisible = false;
+            Random rnd = new Random();
+
+            for (int i = endmessage.Length / 2, j = endmessage.Length / 2 - 1; i < endmessage.Length; i++, j--)
+            {
+
+                Console.SetCursorPosition(i, Console.CursorTop);
+                System.Console.Write(endmessage[i]);
+                Console.SetCursorPosition(j, Console.CursorTop);
+                System.Console.Write(endmessage[j]);
+                await Task.Delay(delayMs);
+                if (i % (endmessage.Length - 1) == 0 || j % (endmessage.Length - 1) == 0)
+                {
+                    i = endmessage.Length / 2 - 1;
+                    j = endmessage.Length / 2;
+                    SetFontColor(rnd.Next(0, 15));
+                }
+
+            }
+
         }
 
         public static void End()

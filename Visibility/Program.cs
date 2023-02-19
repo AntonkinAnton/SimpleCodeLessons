@@ -14,8 +14,6 @@ namespace Visibility
         {
             string repeatingValue = "Второй раз объявлена";
             Console.WriteLine(repeatingValue);
-
-       
         }
 
 
@@ -32,14 +30,6 @@ namespace Visibility
 
             MyMethods.End();
 
-            
-
-
-                
-
-
-
-          
         }
     }
 }
