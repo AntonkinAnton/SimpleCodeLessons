@@ -129,7 +129,7 @@ namespace Nullable
             Console.ForegroundColor = MyConsoleColors[clr];
         }
 
-        public static async void RunningString(string endmessage, int delayMs)
+        public static async void RunningString(string endmessage, int delayMs = 70)
         {
             Console.CursorVisible = false;
             endmessage += " ";
@@ -165,7 +165,7 @@ namespace Nullable
             }
         }
 
-        public static async void EndMessage(string endmessage, int delayMs)
+        public static async void EndMessageFromMiddle(string endmessage, int delayMs = 30)
         {
             endmessage += " ";
             Console.CursorVisible = false;
@@ -186,6 +186,48 @@ namespace Nullable
                     SetFontColor(rnd.Next(0, 15));
                 }
 
+            }
+
+        }
+
+        public static async void EndMessageFromStart(string endmessage, int delayMs = 30)
+        {
+            Console.CursorVisible = false;
+            Random rnd = new Random();
+
+            for (int i = 0; true; i++)
+            {
+
+                Console.SetCursorPosition(i, Console.CursorTop);
+                System.Console.Write(endmessage[i]);
+                await Task.Delay(delayMs);
+                switch (i + 1 == endmessage.Length)
+                {
+                    case true:
+                    i = -1;
+                    SetFontColor(rnd.Next(0, 15));
+                    break;
+                }
+
+            }
+
+
+        }
+
+        public static async void EndMessageColoredLetters(string endmessage, int delayMs = 30)
+        {
+            Console.CursorVisible = false;
+            System.Console.WriteLine(endmessage);
+            Console.SetCursorPosition(0, Console.CursorTop - 1);
+            Random rnd = new Random();
+            int iRand;
+            while (true)
+            {
+                iRand = rnd.Next(endmessage.Length);
+                SetFontColor(rnd.Next(0, 15));
+                Console.SetCursorPosition(iRand, Console.CursorTop);
+                System.Console.Write(endmessage[iRand]);
+                await Task.Delay(delayMs);
             }
 
         }
