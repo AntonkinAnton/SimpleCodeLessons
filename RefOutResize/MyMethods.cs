@@ -35,6 +35,7 @@ namespace RefOutResize
             ConsoleKey inputKey = Console.ReadKey().Key;
             return inputKey;
         }
+
         public static void PrintArray(int[] array, string message)
         {
             System.Console.WriteLine(message);
@@ -117,6 +118,31 @@ namespace RefOutResize
             } while (array[i - 1] != String.Empty);
             Array.Resize(ref array, array.Length - 1);
             return array;
+        }
+
+        public static void ArrayIndexer<T>(T[] array)
+        {
+            int size;
+            string separ = string.Empty;
+            System.Console.Write("Ваш массив:  ");
+
+            for (int i = 0; i < array.Length; i++)
+            {
+                size = i.ToString().Length;
+                separ = new string(' ', size);
+                System.Console.Write($"{array[i]},{separ}");
+            }
+            System.Console.Write("\nИндексы:   ");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+
+            for (int i = 0; i < array.Length; i++)
+            {
+                size = array[i].ToString().Length;
+                separ = new string(' ', size + 1);
+                System.Console.Write(separ + i);
+            }
+            Console.ResetColor();
+            Console.WriteLine();
         }
 
         public static void SetFontColor(int clr)
