@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nullable", "Nullable\Nullab
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RefOutResize", "RefOutResize\RefOutResize.csproj", "{27D985D9-D8C1-498D-9852-FBB50631913E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PatientInHospital", "PatientInHospital\PatientInHospital.csproj", "{018343DD-6C20-4E11-8227-A40243C28CC3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{27D985D9-D8C1-498D-9852-FBB50631913E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{27D985D9-D8C1-498D-9852-FBB50631913E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{27D985D9-D8C1-498D-9852-FBB50631913E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{018343DD-6C20-4E11-8227-A40243C28CC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{018343DD-6C20-4E11-8227-A40243C28CC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{018343DD-6C20-4E11-8227-A40243C28CC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{018343DD-6C20-4E11-8227-A40243C28CC3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
