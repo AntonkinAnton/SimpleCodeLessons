@@ -9,7 +9,7 @@ namespace PatientInHospital
 {
     internal class Program
     {
-        public static List<Patient> MakeListFromInfo(string[] arrayNames, int[]arrayAges, Patient.Gender[]arrayGender, string[]arrayAdress)
+        public static List<Patient> MakeListFromInfo(string[] arrayNames, int[]arrayAges, Patient.GenderType[]arrayGender, string[]arrayAdress)
         {
             List<Patient> patients = new List<Patient>();
 
@@ -26,7 +26,7 @@ namespace PatientInHospital
             string[] namesArray = { "John Pindoss", "Vera Pavlovich", "Delphi Basicov" };
             int[] agesArray = { 25, 41, 37 };
             string[] adressesArray = { "GodBlessAmerica street", "Goose-crystal city", "Silicon Valley" };
-            Patient.Gender[] gendersArray = { Patient.Gender.Male, Patient.Gender.Female, Patient.Gender.Other };
+            Patient.GenderType[] gendersArray = { Patient.GenderType.Male, Patient.GenderType.Female, Patient.GenderType.Other };
 
             List<Patient> patientsList = MakeListFromInfo(namesArray, agesArray, gendersArray, adressesArray);
 

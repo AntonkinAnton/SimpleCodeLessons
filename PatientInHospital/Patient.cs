@@ -8,30 +8,30 @@ namespace PatientInHospital
 {
     internal class Patient
     {
-        public string name;
-        public int age;
-        public Gender gender;
-        public string adress;
+        public string Name;
+        public int Age;
+        public GenderType Gender;
+        public string Adress;
         
-        public enum Gender
+        public enum GenderType
         {
             Male = 0,
             Female = 1,
             Other = 2
         }
 
-        public Patient(string name = "Ivanov Ivan", int age = 20, Gender gender = Gender.Male, string adress = "selo V.Perduncy" )
+        public Patient(string name = "Ivanov Ivan", int age = 20, GenderType gender = GenderType.Male, string adress = "selo V.Perduncy" )
         {
-            this.name = name;
-            this.age = age;
-            this.gender = gender;
-            this.adress = adress;
+            Name = name;
+            Age = age;
+            Gender = gender;
+            Adress = adress;
             
         }
 
         public void PrintPatientInfo ()
         {
-            Console.WriteLine($"Name: {name}\nAge: {age}\nGender: {gender}\nAdress: {adress}\n");
+            Console.WriteLine($"Name: {Name}\nAge: {Age}\nGender: {Gender}\nAdress: {Adress}\n");
             Console.WriteLine("------------------------\n");
         }
     }
