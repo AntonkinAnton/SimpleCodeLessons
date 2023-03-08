@@ -10,9 +10,9 @@ namespace Overloading
     {
         static void Main(string[] args)
         {
-            double[] arrayDoubles = new double[4];
+            double[] arrayDoubles = new double[9];
 
-            int[] arrayInteger = new int[4];
+            int[] arrayInteger = new int[6];
 
             MyMethods.FillArrayRndm(arrayDoubles);
 
