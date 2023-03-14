@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RefOutResize", "RefOutResiz
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PatientInHospital", "PatientInHospital\PatientInHospital.csproj", "{018343DD-6C20-4E11-8227-A40243C28CC3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Polymorphism", "Polymorphism\Polymorphism.csproj", "{6FADF187-F6C4-4F28-B066-C1A3CA22738F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{018343DD-6C20-4E11-8227-A40243C28CC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{018343DD-6C20-4E11-8227-A40243C28CC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{018343DD-6C20-4E11-8227-A40243C28CC3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6FADF187-F6C4-4F28-B066-C1A3CA22738F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FADF187-F6C4-4F28-B066-C1A3CA22738F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FADF187-F6C4-4F28-B066-C1A3CA22738F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FADF187-F6C4-4F28-B066-C1A3CA22738F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
