@@ -3,7 +3,7 @@
 
 namespace Polymorphism
 {
-    internal class Program
+    public class Program
     {
         static void Main()
         {
@@ -24,10 +24,10 @@ namespace Polymorphism
         }
 
 
-            public static void ShowAreaOfShape(Shape shape)
-            {
-                shape.ShowAreaOfShape();
-            }
+        public static void ShowAreaOfShape(Shape shape)
+        {
+            shape.ShowAreaOfShape();
+        }
 
         public static double GetDouble (string message)
         {
