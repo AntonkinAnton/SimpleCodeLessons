@@ -36,12 +36,12 @@ namespace Polymorphism
                         Console.WriteLine($"\nПлощадь круга с радиусом {circle.Radius} = {circle.AreaOfShape()}");
                         break;
 
-                case Rectangle rectangle:
+                    case Rectangle rectangle:
                     Console.WriteLine($"\nПлощадь прямоугольника со сторонами {rectangle.SideA} и {rectangle.SideB}" +
                         $"= {rectangle.AreaOfShape()}");
                     break;
 
-                case Square square:
+                    case Square square:
                         Console.WriteLine($"\nПлощадь квадрата со стороной {square.SideA} = {square.AreaOfShape()}");
                         break;
 
