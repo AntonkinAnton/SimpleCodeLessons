@@ -1,25 +1,25 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.CompilerServices;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace Polymorphism
 {
-    internal class Square : Shape
+    public class Square : Shape
     {
-        public double SideA { get; private set; }
+        protected readonly double SideA;
 
         public Square(double side)
         {
             SideA = side;
         }
 
-        public override double AreaOfShape()
+        protected override double AreaOfShape()
         {
-            return SideA * SideA;
+            return Math.Pow(SideA,2);
         }
 
+        public override void ShowAreaOfShape()
+        {
+            Console.WriteLine($"\nПлощадь квадрата со стороной {SideA} = {AreaOfShape()}");
+        }
     }
 }

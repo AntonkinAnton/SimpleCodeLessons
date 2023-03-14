@@ -1,24 +1,25 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace Polymorphism
 {
-    internal class Circle : Shape
+    public class Circle : Shape
     {
-        const double PI = 3.14;
-        public double Radius { get;private set; }
+        private readonly double _radius;
         
         public Circle(double radius)
         {
-            Radius = radius;
+            _radius = radius;
         }
 
-        public override double AreaOfShape()
+        protected override double AreaOfShape()
         {
-            return Radius * Radius * PI;
+            return Math.Pow(_radius, 2) * Math.PI;
+        }
+
+        public override void ShowAreaOfShape()
+        {
+            Console.WriteLine($"\nПлощадь круга с радиусом {_radius} = {AreaOfShape()}");
         }
     }
 }

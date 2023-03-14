@@ -1,15 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.InteropServices;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace Polymorphism
 {
     internal class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             Circle circle = new Circle(GetDouble("Введите радиус круга:"));
             ShowAreaOfShape(circle);
@@ -30,23 +26,7 @@ namespace Polymorphism
 
             public static void ShowAreaOfShape(Shape shape)
             {
-                switch (shape)
-                {
-                    case Circle circle:
-                        Console.WriteLine($"\nПлощадь круга с радиусом {circle.Radius} = {circle.AreaOfShape()}");
-                        break;
-
-                case Rectangle rectangle:
-                    Console.WriteLine($"\nПлощадь прямоугольника со сторонами {rectangle.SideA} и {rectangle.SideB}" +
-                        $"= {rectangle.AreaOfShape()}");
-                    break;
-
-                case Square square:
-                        Console.WriteLine($"\nПлощадь квадрата со стороной {square.SideA} = {square.AreaOfShape()}");
-                        break;
-
-                }
-
+                shape.ShowAreaOfShape();
             }
 
         public static double GetDouble (string message)

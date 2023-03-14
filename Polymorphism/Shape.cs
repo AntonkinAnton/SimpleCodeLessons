@@ -1,13 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿
 
 namespace Polymorphism
 {
-    internal abstract class Shape
+    public abstract class Shape
     {
-        public abstract double AreaOfShape();
+        protected abstract double AreaOfShape();
+
+        public abstract void ShowAreaOfShape();
     }
+
+
 }

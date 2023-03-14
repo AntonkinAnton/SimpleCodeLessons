@@ -1,23 +1,27 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace Polymorphism
 {
-    internal class Rectangle : Square
+    public class Rectangle : Square
     {
-        public double SideB { get; private set; }
+        private readonly double _sideB;
 
         public Rectangle(double sideA, double sideB) : base(sideA)
         {
-            SideB = sideB;
+            _sideB = sideB;
         }
 
-        public override double AreaOfShape()
+        protected override double AreaOfShape()
         {
-            return SideA * SideB;
+            return SideA * _sideB;
+        }
+
+        public override void ShowAreaOfShape()
+        {
+            Console.WriteLine($"\nПлощадь прямоугольника со сторонами {SideA} и " +
+                $"{_sideB} = {AreaOfShape()}");
         }
     }
 }
