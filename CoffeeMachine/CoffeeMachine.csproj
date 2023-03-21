@@ -45,7 +45,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CalculateMethods.cs" />
     <Compile Include="CoffeeTypes\Americano.cs" />
     <Compile Include="CoffeeTypes\Cappuccino.cs" />
     <Compile Include="MachineTypes\CapsuleCoffeeMachine.cs" />

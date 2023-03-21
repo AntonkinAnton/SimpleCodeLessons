@@ -11,12 +11,15 @@ namespace CoffeeMachine
         static void Main(string[] args)
         {
             var user = new Human();
-            user.CookCoffee(new CapsuleCoffeeMachine(), new Cappuccino());
-            user.CookCoffee(new CapsuleCoffeeMachine(), new Americano());
-            user.CookCoffee(new CapsuleCoffeeMachine(), new Latte());
-            user.CookCoffee(new CarobCoffeeMachine(), new Cappuccino());
-            user.CookCoffee(new CarobCoffeeMachine(), new Americano());
-            user.CookCoffee(new CarobCoffeeMachine(), new Latte());
+            var capsule = new CapsuleCoffeeMachine();
+            var carob = new CarobCoffeeMachine();
+
+            user.CookCoffee(capsule, new Cappuccino());
+            user.CookCoffee(capsule, new Americano());
+            user.CookCoffee(capsule, new Latte());
+            user.CookCoffee(carob, new Cappuccino());
+            user.CookCoffee(carob, new Americano());
+            user.CookCoffee(carob, new Latte());
             Console.ReadKey();
 
         }
